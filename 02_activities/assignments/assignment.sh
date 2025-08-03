@@ -51,7 +51,8 @@ rm -f data/raw/*ipaddr*
 rm -f data/processed/user_logs/*ipaddr*
 
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
-
+echo 'Listing of all files in sub-directories of ../data/processed: \n' > data/inventory.txt
+ls -Rw 1 data/processed/ >> data/inventory.txt      # recursively list files in single column, append output to text file
 
 ###########################################
 
